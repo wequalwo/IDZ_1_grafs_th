@@ -153,7 +153,7 @@ void Binary_relation::solve_2_3()
                 if (M.at(i) != M.at(i))
                 {
                     rez = 0;
-                    std::cout << "Is not antisymmetric, cause " << M.at(i) << "R" << M.at(j) << " == 1, but " << M.at(i) << " != " << M.at(j) << "\n";
+                    std::cout << "Is not \x1b[31mantisymmetric\x1b[0m, cause " << M.at(i) << "R" << M.at(j) << " == 1, but " << M.at(i) << " != " << M.at(j) << "\n";
                     break;
                 }
             }
