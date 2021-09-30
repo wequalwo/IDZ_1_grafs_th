@@ -161,11 +161,11 @@ void Binary_relation::solve_2_3()
     }
     if (rez)
     {
-        std::cout << "Antisymmetric, cause V x, y, e M (xRy && yRx) => x == y\n";
+        std::cout << "\x1b[32mAntisymmetric\x1b[0m, cause V x, y, e M (xRy && yRx) => x == y\n";
     }
 
     if (rez && irreflex)
-        std::cout << "\x1b[32mAsymmetri\x1b[0mc, cause Antisymmetric && Irreflexive\n";
+        std::cout << "\x1b[32mAsymmetric\x1b[0m, cause Antisymmetric && Irreflexive\n";
     else
         std::cout << "Is not \x1b[31mAsymmetric\x1b[0m, cause !(Antisymmetric && Irreflexive)\n";
 
