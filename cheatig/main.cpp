@@ -7,7 +7,7 @@
 */
 int main()
 {
-	std::cout << "It is cheating program :), do not show it to Farid (ok, i'm joking)\n";
+	std::cout << "It is a cheating program :), do not show it to Farid (ok, i'm joking)\n";
 	bool wait;
 	system("pause");
 	Binary_relation b;
