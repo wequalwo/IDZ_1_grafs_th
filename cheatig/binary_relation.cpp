@@ -25,9 +25,9 @@ bool Binary_relation::relation(int first, int second)
     int d = second % 10;
     int c = second / 10;
     //std::cout << "a = " << a << " b = " << b;
-    if (a >= c)
+    if (a > b)
     {
-        if (b >= d)
+        if (b == c)
             return true;
     }
     return false;
@@ -95,7 +95,7 @@ void Binary_relation::solve_2_3()
         rez = rez && matrix.at(i).at(i);
         if (rez == 0)
         {
-            std::cout << "Is not mreflexive, cause " << M.at(i) << "R" << M.at(i) << " == 0\n";
+            std::cout << "Is not \x1b[31mreflexive\x1b[0m, cause " << M.at(i) << "R" << M.at(i) << " == 0\n";
             break;
         }
     }
@@ -199,7 +199,7 @@ void Binary_relation::solve_2_3()
     if (rez)
         std::cout << "\x1b[32mTransitive\x1b[0m. See proof above\n";
     else
-        std::cout << "mIs not \x1b[31transitive\x1b[0m. See proof above\n";
+        std::cout << "Is not \x1b[31mtransitive\x1b[0m. See proof above\n";
 
     if ((reflex && sym) && rez)
         std::cout << "Is an \x1b[32mequivalence\x1b[0m relation, cause Reflexive && Symmetrical && Transitive == true\n";
